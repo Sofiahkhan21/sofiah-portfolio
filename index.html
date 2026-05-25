@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sofiah Kabir - Software Engineer, Web Developer, Prompt Engineer." />
+    <title>Sofiah Kabir | Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="nav container" aria-label="Primary">
+        <a href="#home" class="brand">
+          <span class="brand__mark">SK</span>
+          <span class="brand__text">Sofiah Kabir</span>
+        </a>
+        <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-menu" class="nav__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <button type="button" class="theme-toggle" aria-label="Toggle dark mode">
+            <span class="theme-toggle__sun">☀</span><span class="theme-toggle__moon">☾</span>
+          </button>
+          <a href="cv.html" class="btn btn--tiny btn--primary" download="Sofiah-Kabir-CV.html">Download CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section id="home" class="hero reveal">
+        <div class="hero__particles" aria-hidden="true">
+          <span class="shape s1"></span><span class="shape s2"></span><span class="shape s3"></span><span class="shape s4"></span><span class="shape s5"></span>
+        </div>
+        <div class="container hero__grid">
+          <div class="hero__columns">
+            <div class="hero__content">
+              <h1 class="hero__greeting">
+                Hi, I'm <span class="gradient-text">Sofiah Kabir</span>
+              </h1>
+              <p class="hero__typing" aria-live="polite">
+                <span id="typing-text"></span><span class="typing-caret" aria-hidden="true"></span>
+              </p>
+              <p class="hero__desc">
+                I'm a Frontend Developer who loves building clean, responsive, and user-friendly web experiences. I work with modern web technologies to bring creative ideas to life on the browser. Alongside development, I also work as a Prompt Engineer — crafting smart AI prompts to build smarter solutions.
+              </p>
+              <div class="hero__cta">
+                <a href="#projects" class="btn btn--primary">View My Work</a>
+                <a href="cv.html" class="btn btn--ghost" download="Sofiah-Kabir-CV.html">Download CV</a>
+              </div>
+              <div class="socials hero__socials">
+                <a href="https://github.com/Sofiahkhan21" target="_blank" rel="noopener noreferrer" class="hero__social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" />
+                  </svg>
+                  <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/sofiahkabir-1b608a39b" target="_blank" rel="noopener noreferrer" class="hero__social-link">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                  <span>LinkedIn</span>
+                </a>
+              </div>
+            </div>
+            <div class="hero__photo-col">
+              <div class="hero__photo-frame">
+                <img
+                  id="profile-photo-hero"
+                  class="hero__intro-img"
+                  alt=""
+                  decoding="async"
+                  width="420"
+                  height="500"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="container about">
+          <div class="about__visual">
+            <div class="about__photo-wrap">
+              <div class="about__photo-ring"></div>
+              <div class="about__photo profile-slot" data-profile-slot>
+                <img id="profile-photo-about" alt="Sofiah Kabir profile photo" decoding="async" width="400" height="400" />
+                <span class="profile-slot__fallback" aria-hidden="true">SK</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 class="section__title">About Me</h2>
+            <p class="section__lead">
+              Hi! I am Sofiah Kabir, a Software Engineering graduate from University of Poonch Rawalakot AJK Pakistan with a GPA of 3.78/4.0. I am passionate about web development, mobile app development, and AI tools. I have real-world experience in building applications and teaching IT skills. Currently seeking internship opportunities in software development or AI.
+            </p>
+            <div class="stats">
+              <article class="glass stat"><h3>3.78</h3><p>GPA</p></article>
+              <article class="glass stat"><h3>2+</h3><p>Projects</p></article>
+              <article class="glass stat"><h3>1 Year</h3><p>Experience</p></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--tint reveal">
+        <div class="container">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__lead">Technical strengths with practical project experience.</p>
+          <div class="skills-grid">
+            <div class="glass">
+              <h3 class="subhead">Tech Levels</h3>
+              <div class="bars">
+                <div class="bar" data-level="80"><span>HTML/CSS</span><b>80%</b><i></i></div>
+                <div class="bar" data-level="70"><span>JavaScript</span><b>70%</b><i></i></div>
+                <div class="bar" data-level="30"><span>React.js</span><b>30%</b><i></i></div>
+                <div class="bar" data-level="65"><span>Flutter</span><b>65%</b><i></i></div>
+                <div class="bar" data-level="60"><span>Firebase</span><b>60%</b><i></i></div>
+                <div class="bar" data-level="30"><span>Python</span><b>30%</b><i></i></div>
+                <div class="bar" data-level="60"><span>C++</span><b>60%</b><i></i></div>
+                <div class="bar" data-level="85"><span>Prompt Engineering</span><b>85%</b><i></i></div>
+                <div class="bar" data-level="75"><span>Graphic Designing</span><b>75%</b><i></i></div>
+                <div class="bar" data-level="90"><span>MS Office</span><b>90%</b><i></i></div>
+              </div>
+            </div>
+            <div class="glass">
+              <h3 class="subhead">Tools & Technologies</h3>
+              <div class="tags">
+                <span>💻 HTML</span><span>🎨 CSS</span><span>🧠 JavaScript</span><span>⚛ React.js</span><span>📱 Flutter</span><span>🔥 Firebase</span><span>🐍 Python</span><span>⚙ C++</span><span>🪄 Prompt Engineering</span><span>🖌 Graphic Designing</span><span>📊 MS Office</span><span>🎬 Video Editing</span><span>🧰 Canva</span><span>🤖 AI Tools</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section reveal">
+        <div class="container">
+          <h2 class="section__title">Projects</h2>
+          <div class="cards">
+            <article class="glass project">
+              <h3>📌 Grievance Redressal App</h3>
+              <p>Led development of an online complaint management system for university enabling students and staff to register, track and resolve grievances digitally with user authentication, complaint tracking and admin dashboard.</p>
+              <div class="tags"><span>Flutter</span><span>Firebase</span></div>
+            </article>
+            <article class="glass project">
+              <h3>🌐 IT Center Website</h3>
+              <p>Developed a responsive and interactive website for IT Center featuring course details, faculty profiles and online student results.</p>
+              <div class="tags"><span>React.js</span><span>Firebase</span><span>ChatGPT</span></div>
+            </article>
+            <article class="glass project">
+              <h3>✨ Personal Portfolio Website</h3>
+              <p>Designed and developed a fully responsive personal portfolio website using AI tools including Cursor AI and Claude AI through prompt engineering.</p>
+              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Cursor AI</span><span>Claude AI</span></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section section--tint reveal">
+        <div class="container">
+          <h2 class="section__title">Education</h2>
+          <div class="timeline">
+            <article class="glass timeline__item"><h3>🎓 Bachelor of Software Engineering | 2020-2024</h3><p>University of Poonch Rawalakot AJK Pakistan</p><p>GPA: 3.78/4.0</p></article>
+            <article class="glass timeline__item"><h3>🎓 Intermediate in Computer Science | 2018-2020</h3><p>Noble School & College Garala AJK Pakistan</p><p>GPA: 3.7/4.0</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section reveal">
+        <div class="container">
+          <h2 class="section__title">Work Experience</h2>
+          <div class="timeline">
+            <article class="glass timeline__item">
+              <h3>💼 IT Instructor | Ehsas IT Center Pallandri AJK | 2024 - Current</h3>
+              <ul class="list">
+                <li>Instructed and mentored students in computer courses</li>
+                <li>Covered Microsoft Office, graphic design, video editing and internet usage</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certifications" class="section section--tint reveal">
+        <div class="container">
+          <h2 class="section__title">Certifications</h2>
+          <div class="cards certs">
+            <article class="glass cert"><h3>🏆 Academic Excellence</h3><p>Ranked top 5 students with GPA 3.78/4.0.</p></article>
+            <article class="glass cert"><h3>📜 Internship Certificate</h3><p>Professional Internship certificate from Ezeesol Technology Software House.</p></article>
+            <article class="glass cert"><h3>✅ TEVTA Certified</h3><p>Certified in Computer Skills by TEVTA.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="container contact-grid">
+          <div>
+            <h2 class="section__title">Contact</h2>
+            <p class="section__lead">Let us connect for internships, collaborations, and innovative software opportunities.</p>
+            <div class="glass contact-info">
+              <p>📧 sofiakabir034@gmail.com</p>
+              <p>📱 +92 317 1872451</p>
+              <p>📍 Sudhnoti, AJK, Pakistan</p>
+              <p>🔗 <a href="https://www.linkedin.com/in/sofiahkabir-1b608a39b" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+              <p>💻 <a href="https://github.com/Sofiahkhan21" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </div>
+          </div>
+          <form id="contact-form" class="glass contact-form" action="https://formsubmit.co/sofiakabir034@gmail.com" method="post">
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="thank-you.html" />
+            <label>Full Name<input type="text" name="fullName" required autocomplete="name" /></label>
+            <label>Email<input type="email" name="email" required autocomplete="email" /></label>
+            <label>Message<textarea name="message" rows="5" required></textarea></label>
+            <button class="btn btn--primary" type="submit">Send Message</button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p>© 2025 Sofiah Kabir</p>
+        <div class="socials">
+          <a href="https://github.com/Sofiahkhan21" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/sofiahkabir-1b608a39b" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p>Built with love using Cursor AI and Claude AI through Prompt Engineering</p>
+      </div>
+    </footer>
+
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Back to top">↑</button>
+    <script src="script.js"></script>
+  </body>
+</html>

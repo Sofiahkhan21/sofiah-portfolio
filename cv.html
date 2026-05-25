@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofiah Kabir - CV</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --paper: #ffffff;
+        --text: #1a1a1a;
+        --muted: #4f5565;
+        --accent: #3f256e;
+        --accent-soft: #efe9fb;
+        --border: #e5e7eb;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", Roboto, Arial, sans-serif;
+        background: #f6f4fb;
+        color: var(--text);
+        line-height: 1.55;
+      }
+
+      .page-wrap {
+        max-width: 980px;
+        margin: 1.5rem auto 2.5rem;
+        padding: 0 1rem;
+      }
+
+      .actions {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 0.9rem;
+      }
+
+      .pdf-btn {
+        border: 0;
+        border-radius: 999px;
+        padding: 0.65rem 1.1rem;
+        background: var(--accent);
+        color: #ffffff;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .cv {
+        background: var(--paper);
+        border: 1px solid var(--border);
+        box-shadow: 0 10px 30px rgba(25, 12, 46, 0.08);
+      }
+
+      .cv-header {
+        background: var(--accent);
+        color: #ffffff;
+        padding: 2rem 2rem 1.3rem;
+      }
+
+      .name {
+        margin: 0;
+        font-size: 2rem;
+        letter-spacing: 0.02em;
+      }
+
+      .role {
+        margin: 0.3rem 0 0;
+        font-size: 0.95rem;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        opacity: 0.9;
+      }
+
+      .cv-body {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+      }
+
+      .left {
+        padding: 1.4rem;
+        border-right: 1px solid var(--border);
+        background: #fcfbff;
+      }
+
+      .right {
+        padding: 1.4rem 1.6rem;
+      }
+
+      .section {
+        margin-bottom: 1.2rem;
+      }
+
+      .section:last-child {
+        margin-bottom: 0;
+      }
+
+      .section h2 {
+        margin: 0 0 0.55rem;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        letter-spacing: 0.09em;
+        color: var(--accent);
+      }
+
+      .contact-list,
+      .chip-list,
+      .bullet-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .contact-list li {
+        margin-bottom: 0.45rem;
+        font-size: 0.9rem;
+        word-break: break-word;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .chip-list li {
+        display: inline-block;
+        margin: 0 0.35rem 0.35rem 0;
+        padding: 0.28rem 0.55rem;
+        font-size: 0.82rem;
+        border-radius: 999px;
+        background: var(--accent-soft);
+        color: #2f1d54;
+      }
+
+      .entry {
+        margin-bottom: 0.95rem;
+      }
+
+      .entry:last-child {
+        margin-bottom: 0;
+      }
+
+      .entry h3 {
+        margin: 0;
+        font-size: 1rem;
+      }
+
+      .meta {
+        margin: 0.15rem 0 0.4rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      .summary {
+        margin: 0.2rem 0 0;
+        font-size: 0.95rem;
+      }
+
+      .bullet-list li {
+        margin-bottom: 0.3rem;
+        position: relative;
+        padding-left: 0.95rem;
+      }
+
+      .bullet-list li::before {
+        content: "";
+        width: 0.36rem;
+        height: 0.36rem;
+        border-radius: 50%;
+        background: var(--accent);
+        position: absolute;
+        left: 0;
+        top: 0.56rem;
+      }
+
+      .small {
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 860px) {
+        .cv-body {
+          grid-template-columns: 1fr;
+        }
+
+        .left {
+          border-right: 0;
+          border-bottom: 1px solid var(--border);
+        }
+      }
+
+      @media print {
+        @page {
+          size: A4;
+          margin: 12mm;
+        }
+
+        body {
+          background: #ffffff;
+        }
+
+        .page-wrap {
+          max-width: none;
+          margin: 0;
+          padding: 0;
+        }
+
+        .actions {
+          display: none;
+        }
+
+        .cv {
+          border: 0;
+          box-shadow: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page-wrap">
+      <div class="actions">
+        <button class="pdf-btn" onclick="window.print()">Download as PDF</button>
+      </div>
+
+      <article class="cv">
+        <header class="cv-header">
+          <h1 class="name">SOFIAH KABIR</h1>
+          <p class="role">Software Engineer</p>
+        </header>
+
+        <div class="cv-body">
+          <aside class="left">
+            <section class="section">
+              <h2>Contact</h2>
+              <ul class="contact-list">
+                <li><strong>Phone:</strong> +92 317 1872451</li>
+                <li><strong>Email:</strong> sofiakabir034@gmail.com</li>
+                <li><strong>Address:</strong> Sudhnoti, AJK, Pakistan</li>
+                <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sofiahkabir-1b608a39b">Profile</a></li>
+                <li><strong>GitHub:</strong> <a href="https://github.com/Sofiahkhan21">Sofiahkhan21</a></li>
+                <li><strong>Portfolio:</strong> <a href="https://Sofiahkhan21.github.io">Sofiahkhan21.github.io</a></li>
+              </ul>
+            </section>
+
+            <section class="section">
+              <h2>Tech Skills</h2>
+              <ul class="chip-list">
+                <li>HTML, CSS, JS (Intermediate)</li>
+                <li>Dart, Python (Basic)</li>
+                <li>C++ (Intermediate)</li>
+                <li>App Development</li>
+                <li>Web Development</li>
+                <li>MS Office</li>
+                <li>Graphic Designing</li>
+                <li>Prompt Engineering</li>
+                <li>Canva</li>
+              </ul>
+            </section>
+
+            <section class="section">
+              <h2>Soft Skills</h2>
+              <ul class="bullet-list small">
+                <li>Teamwork</li>
+                <li>Time Management</li>
+                <li>Leadership</li>
+                <li>Effective Communication</li>
+                <li>Critical Thinking</li>
+              </ul>
+            </section>
+
+            <section class="section">
+              <h2>Languages & Goal</h2>
+              <ul class="bullet-list small">
+                <li>English: Fluent</li>
+                <li>Urdu: Fluent</li>
+                <li>Career Goal: Aspiring Software Engineer seeking internship opportunities in web/app development or AI</li>
+                <li>Interests: Web & App Development, AI Automation</li>
+              </ul>
+            </section>
+          </aside>
+
+          <main class="right">
+            <section class="section">
+              <h2>Profile</h2>
+              <p class="summary">
+                A motivated Software Engineering graduate with a GPA of 3.78/4.0 and hands-on experience in web and mobile app development and AI Tools. Proficient in HTML, CSS, JavaScript, React, Flutter, and Firebase. Built real-world projects including a university grievance app and an IT center website. Eager to apply technical skills in a professional environment and grow as a software developer.
+              </p>
+            </section>
+
+            <section class="section">
+              <h2>Education</h2>
+              <div class="entry">
+                <h3>Bachelor of Software Engineering | 2020 - 2024</h3>
+                <p class="meta">University of Poonch Rawalakot AJK Pakistan</p>
+                <p class="summary">GPA: 3.78 / 4.0</p>
+              </div>
+              <div class="entry">
+                <h3>Intermediate in Computer Science | 2018 - 2020</h3>
+                <p class="meta">Noble School & College Garala AJK Pakistan</p>
+                <p class="summary">GPA: 3.7 / 4.0</p>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2>Projects</h2>
+              <div class="entry">
+                <h3>Grievance Redressal App</h3>
+                <p class="summary">
+                  Led the development of an online complaint management system for a university, enabling students and staff to register, track, and resolve grievances digitally. The application included features such as user authentication, complaint submission forms, status tracking, and admin dashboards for efficient grievance redressal and report generation.
+                </p>
+                <p class="meta">Technologies Used: Flutter, Firebase</p>
+                <p class="meta">Source Code: <a href="https://github.com/Sofiahkhan21/grievance-redressal-app">github.com/Sofiahkhan21/grievance-redressal-app</a></p>
+              </div>
+              <div class="entry">
+                <h3>IT Center Website</h3>
+                <p class="summary">
+                  Developed a responsive and interactive website for IT Center featuring course details, faculty profiles, and online student results.
+                </p>
+                <p class="meta">Technologies Used: React.js, Firebase, ChatGPT, Visual Studio Code</p>
+              </div>
+              <div class="entry">
+                <h3>Personal Portfolio Website</h3>
+                <p class="summary">
+                  Designed and developed a fully responsive personal portfolio website using AI tools to showcase skills, projects, and professional experience. Features include project showcase, skills section, and contact information.
+                </p>
+                <p class="meta">Technologies Used: HTML, CSS, JavaScript, Cursor AI, Claude AI</p>
+                <p class="meta">Live Demo: <a href="https://Sofiahkhan21.github.io">Sofiahkhan21.github.io</a></p>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2>Work Experience</h2>
+              <div class="entry">
+                <h3>IT Instructor | Ehsas IT Center, Pallandri AJK | 2024 - Current</h3>
+                <ul class="bullet-list">
+                  <li>Instructed and mentored students in comprehensive computer courses.</li>
+                  <li>Covered a curriculum including fundamental computer skills, Microsoft Office suite, graphic design, video editing, and internet usage.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section class="section">
+              <h2>Achievements & Certifications</h2>
+              <ul class="bullet-list">
+                <li>Recognized for academic excellence, maintaining a GPA of 3.78/4.0, and ranking among the top 5 students throughout the entire educational period.</li>
+                <li>Awarded a professional Internship certificate from Ezeesol Technology Software House.</li>
+                <li>Certified in Computer Skills by TEVTA.</li>
+              </ul>
+            </section>
+          </main>
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
